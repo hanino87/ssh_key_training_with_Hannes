@@ -21,9 +21,11 @@ ls -al ~/.ssh
 
 # If you see files like:
 
-id_ed25519
-id_ed25519.pub
-known_hosts
+1. id_ed25519
+
+2. id_ed25519.pub
+
+3. known_hosts
 
 ✅ You already have an SSH key if id_ed25519 and id_ed25519.pub (or similar) exist. Go to step 4 
 
@@ -33,11 +35,11 @@ known_hosts
 
 # Run the following command (replace your_email@example.com with your GitHub email):
 
-``` shell 
-
+``` Shell 
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
 ```
+
 Press Enter to accept the default location (~/.ssh/id_ed25519).
 
 Choose a passphrase (optional, but recommended).
@@ -46,22 +48,24 @@ If you don´t want a passphrase press enter to continue
 
 3.✅  Make sure the SSH agent is running and your key is loaded
 
-´´´Shell 
 
-# Start the SSH agent
+``` Shell
+
 eval "$(ssh-agent -s)"
 
-# Add your SSH key to the agent
+```
+
+```Shell
+
 ssh-add ~/.ssh/id_ed25519
 
-'''
-
+```
 
 4. 📋 Add your SSH key to GitHub
 
 # Copy the contents of your public key:
 
-``` shell 
+```Shell 
 
 cat ~/.ssh/id_ed25519.pub
 
@@ -69,10 +73,13 @@ cat ~/.ssh/id_ed25519.pub
 
 # Then go to:
 
-GitHub > Settings > SSH and GPG keys > New SSH key
-Paste your key
-Give it a title
-Click Add SSH key
+1. GitHub > Settings > SSH and GPG keys > New SSH key
+
+2. Paste your key
+
+3. Give it a title
+
+4. Click Add SSH key
 
 
 5. ✅ Test the SSH connection
