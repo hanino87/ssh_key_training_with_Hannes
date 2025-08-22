@@ -2,6 +2,7 @@
 # ✦ Why use SSH instead of HTTPS for GitHub❓✦
 
 Using SSH to connect to GitHub is:
+
 ✅ Easier – You don’t have to type your username and password or personal access token every time you push or pull.
 
 ✅ More secure – SSH uses a secure key pair instead of passwords.
